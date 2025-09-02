@@ -54,20 +54,20 @@ The project integrates **predicate logic, forward chaining inference, and planni
 
 ## 📂 Repository Structure
 
-- `src`
+- `src/`
   - `MyAgent.java` - Main implementation of the agent (logic, inference, planning)
   - `RunMe.java` - The entrace file (used to run the program)
   - `Agent.java` - Helper class to define an agent
   - `Plan.java` - Helper class to define a plan as a vector of predicates
-  - `environment`
+  - `environment/`
     - `Location.java` - Helper class to define one location in the world
     - `Maze.java` - Helper class representing simple maze world in which the agent can execute actions and receive percepts
-  - `logic`
+  - `logic/`
     - `KB.java` - This file defines a KB class that represents a knowledge base of logical sentences
     - `Predicate.java` - Helper class to define a logical predicate
     - `Sentence.java` - Helper class to define a logical statement with zero or more positive condition predicates
     - `Term.java` - Helper class to define a constant or variable in a logical predicate
-- `data`
+- `data/`
   - `percepts.txt` - Percept rules (translate maze perceptions into beliefs)
   - `program.txt` - Program rules (main agent reasoning and goal adoption)
   - `actions.txt` - Action rules (postconditions of actions)
